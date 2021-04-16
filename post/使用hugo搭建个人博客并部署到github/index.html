@@ -149,46 +149,46 @@
 <h3 id="2hugo环境配置">2.Hugo环境配置</h3>
 <p>在path添加：D:\hugo\</p>
 <h3 id="3生成站点">3.生成站点</h3>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"> <span class="nx">hugo</span> <span class="nx">new</span> <span class="nx">site</span> <span class="nx">your_site_name</span>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"> hugo new site your_site_name
 </code></pre></div><p>your_site_name可以任意取名。</p>
 <p><strong>站点目录结构</strong>：</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go">  <span class="err">▸</span> <span class="nx">archetypes</span><span class="o">/</span> 
-  <span class="err">▸</span> <span class="nx">content</span><span class="o">/</span>     <span class="err">#</span><span class="nx">静态页面目录</span>
-  <span class="err">▸</span> <span class="nx">data</span><span class="o">/</span>
-  <span class="err">▸</span> <span class="nx">layouts</span><span class="o">/</span>
-  <span class="err">▸</span> <span class="nx">resourse</span><span class="o">/</span>
-  <span class="err">▸</span> <span class="nx">static</span><span class="o">/</span>      <span class="err">#</span><span class="nx">静态文件目录</span>
-  <span class="err">▸</span> <span class="nx">themes</span><span class="o">/</span>      <span class="err">#</span><span class="nx">主题目录</span>
-  <span class="o">-</span> <span class="nx">config</span><span class="p">.</span><span class="nx">toml</span>  <span class="err">#</span><span class="nx">配置文件</span>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">  ▸ archetypes/ 
+  ▸ content/     #静态页面目录
+  ▸ data/
+  ▸ layouts/
+  ▸ resourse/
+  ▸ static/      #静态文件目录
+  ▸ themes/      #主题目录
+  - config.toml  #配置文件
 </code></pre></div><h3 id="4创建页面">4.创建页面</h3>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="err">$</span> <span class="nx">hugo</span> <span class="nx">new</span> <span class="nx">about</span><span class="p">.</span><span class="nx">md</span>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">$ hugo new about.md
 </code></pre></div><p><code>about.md</code> 自动生成到了 <code>content/about.md</code> 。</p>
 <p>若md文件内有draft=false，在部署到github时应该改为true。</p>
 <p>内容是 <code>Markdown</code> 格式的，<code>+++</code> 之间的内容是 <a href="https://github.com/toml-lang/toml">TOML</a> 格式的。</p>
 <h3 id="5创建文章">5.创建文章</h3>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="err">$</span> <span class="nx">hugo</span> <span class="nx">new</span> <span class="nx">post</span><span class="o">/</span><span class="nx">firstBlog</span><span class="p">.</span><span class="nx">md</span>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">$ hugo new post/firstBlog.md
 </code></pre></div><h3 id="6布置博客主题">6.布置博客主题</h3>
 <p>在<a href="https://themes.gohugo.io/">hugo主题</a>中挑选一个主题，将其下载到站点的themes目录下。可直接下载或者使用git。</p>
 <p>本人使用anatole主题（主题简洁；并且有config.toml文件而不是yaml文件，exampleSite文件可供参考，布置比较简单)。</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="err">$</span> <span class="nx">cd</span> <span class="nx">themes</span>
-<span class="err">$</span> <span class="nx">git</span> <span class="nx">clone</span> <span class="nx">https</span><span class="p">:</span><span class="c1">//github.com/lxndrblz/anatole.git
-</span></code></pre></div><h3 id="7测试主题">7.测试主题</h3>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">$ cd themes
+$ git clone https://github.com/lxndrblz/anatole.git
+</code></pre></div><h3 id="7测试主题">7.测试主题</h3>
 <p>在你的站点根目录执行 <code>Hugo</code> 命令进行调试：</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="err">$</span> <span class="nx">hugo</span> <span class="nx">server</span> <span class="o">--</span><span class="nx">theme</span><span class="p">=</span><span class="nx">anatole</span> <span class="o">--</span><span class="nx">buildDrafts</span>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">$ hugo server --theme=anatole --buildDrafts
 </code></pre></div><p>浏览器里打开： <code>http://localhost:1313</code></p>
 <h3 id="8建立仓库">8.建立仓库</h3>
-<p><img src="C:%5CUsers%5Cxiaochouyu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210416195422598.png" alt="image-20210416195422598"></p>
+<p><img src="/images/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0github/image-20210416195422598.png" alt="image-20210416195422598"></p>
 <p>我的ssh路径：https://github.com/zhengshi119/zhengshi119.github.io.git</p>
 <h3 id="9修改配置文件configtoml">9.修改配置文件config.toml</h3>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s">&#34;https://zhengshi119.github.io&#34;</span>
-<span class="nx">languageCode</span> <span class="p">=</span> <span class="s">&#34;zh-cn&#34;</span>
-<span class="nx">DefaultContentLanguage</span> <span class="p">=</span> <span class="s">&#34;zh&#34;</span>
-<span class="nx">title</span> <span class="p">=</span> <span class="s">&#34;Website of Zhengshi119&#34;</span>
-<span class="nx">theme</span> <span class="p">=</span> <span class="s">&#34;anatole&#34;</span>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">baseURL = &#34;https://zhengshi119.github.io&#34;
+languageCode = &#34;zh-cn&#34;
+DefaultContentLanguage = &#34;zh&#34;
+title = &#34;Website of Zhengshi119&#34;
+theme = &#34;anatole&#34;
 </code></pre></div><p>注意修改baseURL（你的githubPage)、theme（你下载的主题名称)，其他的根据个人自行修改。</p>
 <h3 id="10生成public目录">10.生成public目录</h3>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="nx">执行hudo命令</span><span class="p">,</span><span class="nx">生成public目录</span><span class="p">:</span>
-<span class="nx">hugo</span>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">执行hudo命令,生成public目录:
+hugo
 </code></pre></div><p>所有静态页面都会生成到 <code>public</code> 目录。</p>
 <h3 id="11部署到github上">11.部署到github上</h3>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">$ cd public
@@ -197,26 +197,26 @@ $ git remote add origin https://github.com/zhengshi119/zhengshi119.github.io.git
 $ git add -A
 $ git commit -m &#34;first commit&#34;
 $ git push -u origin master
-</code></pre></div><p><!-- raw HTML omitted --></p>
+</code></pre></div><p><img src="/images/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0github/image-20210416204055679.png" alt="image-20210416204055679"></p>
 <p>这里输入的是你github上的<strong>邮箱</strong>，之后一个输入你github的密码。</p>
 <p>注意：在github远程创建仓库后, 利用gitbash进行提交本地文件的时候出现错误时，可以试试：</p>
-<p><img src="https://img-blog.csdnimg.cn/20190418184535225.png" alt="img"></p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="mi">1</span><span class="p">:</span> <span class="nx">进行push前先将远程仓库pull到本地仓库</span>
-<span class="err">$</span> <span class="nx">git</span> <span class="nx">pull</span> <span class="nx">origin</span> <span class="nx">master</span>    <span class="err">#</span><span class="nx">git</span> <span class="nx">pull</span> <span class="o">--</span><span class="nx">rebase</span> <span class="nx">origin</span> <span class="nx">master</span>
-<span class="err">$</span> <span class="nx">git</span> <span class="nx">push</span> <span class="o">-</span><span class="nx">u</span> <span class="nx">origin</span> <span class="nx">master</span>
+<p><img src="/images/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0github/03.png" alt="03"></p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">1: 进行push前先将远程仓库pull到本地仓库
+$ git pull origin master    #git pull --rebase origin master
+$ git push -u origin master
  
-<span class="mi">2</span><span class="p">:</span> <span class="nx">强制push本地仓库到远程</span> <span class="p">(</span><span class="nx">这种情况不会进行merge</span><span class="p">,</span> <span class="nx">强制push后远程文件可能会丢失</span> <span class="nx">不建议使用此方法</span><span class="p">)</span>
-<span class="err">$</span> <span class="nx">git</span> <span class="nx">push</span> <span class="o">-</span><span class="nx">u</span> <span class="nx">origin</span> <span class="nx">master</span> <span class="o">-</span><span class="nx">f</span>
+2: 强制push本地仓库到远程 (这种情况不会进行merge, 强制push后远程文件可能会丢失 不建议使用此方法)
+$ git push -u origin master -f
  
-<span class="mi">3</span><span class="p">:</span> <span class="nx">避开解决冲突</span><span class="p">,</span> <span class="nx">将本地文件暂时提交到远程新建的分支中</span>
-<span class="err">$</span> <span class="nx">git</span> <span class="nx">branch</span> <span class="p">[</span><span class="nx">name</span><span class="p">]</span>
-<span class="err">#</span> <span class="nx">创建完branch后</span><span class="p">,</span> <span class="nx">再进行push</span>
-<span class="err">$</span> <span class="nx">git</span> <span class="nx">push</span> <span class="o">-</span><span class="nx">u</span> <span class="nx">origin</span> <span class="p">[</span><span class="nx">name</span><span class="p">]</span> 
+3: 避开解决冲突, 将本地文件暂时提交到远程新建的分支中
+$ git branch [name]
+# 创建完branch后, 再进行push
+$ git push -u origin [name] 
 </code></pre></div><p>我使用的是第二个的强制push。</p>
 <h3 id="12在github上修改分支">12.在github上修改分支</h3>
 <p>因为站点是部署在master分支上的，需要修改到master分支，才能显示你修改的界面。</p>
 <p>在Setting→Pages：</p>
-<p><img src="C:%5CUsers%5Cxiaochouyu%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210416201135486.png" alt="image-20210416201135486"></p>
+<p><img src="/images/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0github/image-20210416201135486.png" alt="image-20210416201135486"></p>
 <p>最后在浏览器上登录：https://zhengshi119.github.io</p>
 </div>
         <div class="post-footer">
