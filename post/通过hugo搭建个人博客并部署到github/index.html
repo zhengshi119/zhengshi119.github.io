@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh" data-theme=""><head>
+    <title> zhengshi119 | 通过Hugo搭建个人博客并部署到Github </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.82.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="不学才是真正的贫穷">
+    
+    <link rel="stylesheet"
+          href="/css/style.min.fcb9fff7c419523356a94cdf31590b93dccf2ebf2f6ada952f2b320133f3d746.css"
+          integrity="sha256-/Ln/98QZUjNWqUzfMVkLk9zPLr8vatqVLysyATPz10Y="
+          crossorigin="anonymous"
+          type="text/css">
+    
+    <link rel="stylesheet"
+        href="/css/markupHighlight.min.f798cbda9aaa38f89eb38be6414bd082cfd71a6780375cbf67b6d2fb2b96491e.css"
+        integrity="sha256-95jL2pqqOPies4vmQUvQgs/XGmeAN1y/Z7bS&#43;yuWSR4="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="/post/%E9%80%9A%E8%BF%87hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0github/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="/js/anatole-header.min.0c05c0a90d28c968a1cad4fb31abd0b8e1264e788ccefed022ae1d3b6f627514.js"
+            integrity="sha256-DAXAqQ0oyWihytT7MavQuOEmTniMzv7QIq4dO29idRQ="
+            crossorigin="anonymous"></script>
+
+
+    
+        
+        
+        <script type="text/javascript"
+                src="/js/anatole-theme-switcher.min.47918423907d577c1f04c2fd28730186eca486fb18e52fc882c3c7ad5f2540b1.js"
+                integrity="sha256-R5GEI5B9V3wfBML9KHMBhuykhvsY5S/IgsPHrV8lQLE="
+                crossorigin="anonymous"></script>
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://zhengshi119.github.io/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="通过Hugo搭建个人博客并部署到Github"/>
+<meta name="twitter:description" content="1. Hugo安装 本人操作系统为windows10 64位。
+到Hugo releases页面下载hugo_xxx_Windows-64bit.zip，解压到一个安全目录(D:/hugo)，然后将该目录添加到环境变量path中，在cmd运行version，正确展示版本号则安装正确。
+2.Hugo环境配置 在path添加：D:\hugo\
+3.生成站点 hugo new site your_site_name your_site_name可以任意取名。"/>
+
+
+    
+
+</head>
+<body><div class="sidebar animated fadeInDown ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="/images/OIP.jpg" alt="profile picture">
+            <h3 title=""><a href="/">ZHENGSHI119</a></h3>
+            <div class="description">
+                <p>不学才是真正的贫穷</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://github.com/zhengshi119?tab=repositorie" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; zhengshi119  2021 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  animated fadeInDown ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">主页</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">文章</a></li>
+        
+            
+            <li><a 
+                   href="/about/"
+                        
+                   title="">关于</a></li>
+        
+        
+        
+            <li class="theme-switch-item">
+                <a class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            
+            <div class="post-title">
+                <h3>通过Hugo搭建个人博客并部署到Github</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date"> 
+                                                2021/11/16
+                                           </span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time"></span>
+                    </div>
+                
+            </div>
+
+            <h3 id="1-hugo安装">1. Hugo安装</h3>
+<p>本人操作系统为windows10 64位。</p>
+<p>到<a href="https://github.com/gohugoio/hugo/releases">Hugo releases页面</a>下载hugo_xxx_Windows-64bit.zip，解压到一个安全目录(D:/hugo)，然后将该目录添加到环境变量path中，在cmd运行version，正确展示版本号则安装正确。</p>
+<h3 id="2hugo环境配置">2.Hugo环境配置</h3>
+<p>在path添加：D:\hugo\</p>
+<h3 id="3生成站点">3.生成站点</h3>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"> hugo new site your_site_name
+</code></pre></div><p>your_site_name可以任意取名。</p>
+<p><strong>站点目录结构</strong>：</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">  ▸ archetypes/ 
+  ▸ content/     #静态页面目录
+  ▸ data/
+  ▸ layouts/
+  ▸ resourse/
+  ▸ static/      #静态文件目录
+  ▸ themes/      #主题目录
+  - config.toml  #配置文件
+</code></pre></div><h3 id="4创建页面">4.创建页面</h3>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">$ hugo new about.md
+</code></pre></div><p><code>about.md</code> 自动生成到了 <code>content/about.md</code> 。</p>
+<p>若md文件内有draft=false，在部署到github时应该改为true。</p>
+<p>内容是 <code>Markdown</code> 格式的，<code>+++</code> 之间的内容是 <a href="https://github.com/toml-lang/toml">TOML</a> 格式的。</p>
+<h3 id="5创建文章">5.创建文章</h3>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">$ hugo new post/firstBlog.md
+</code></pre></div><h3 id="6布置博客主题">6.布置博客主题</h3>
+<p>在<a href="https://themes.gohugo.io/">hugo主题</a>中挑选一个主题，将其下载到站点的themes目录下。可直接下载或者使用git。</p>
+<p>本人使用anatole主题（主题简洁；并且有config.toml文件而不是yaml文件，exampleSite文件可供参考，布置比较简单)。</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">$ cd themes
+$ git clone https://github.com/lxndrblz/anatole.git
+</code></pre></div><h3 id="7测试主题">7.测试主题</h3>
+<p>在你的站点根目录执行 <code>Hugo</code> 命令进行调试：</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">$ hugo server --theme=anatole --buildDrafts
+</code></pre></div><p>浏览器里打开： <code>http://localhost:1313</code></p>
+<h3 id="8建立仓库">8.建立仓库</h3>
+<p><img src="/images/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0github/image-20210416195422598.png" alt="image-20210416195422598"></p>
+<p>我的ssh路径：https://github.com/zhengshi119/zhengshi119.github.io.git</p>
+<h3 id="9修改配置文件configtoml">9.修改配置文件config.toml</h3>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">baseURL = &#34;https://zhengshi119.github.io&#34;
+languageCode = &#34;zh-cn&#34;
+DefaultContentLanguage = &#34;zh&#34;
+title = &#34;Website of Zhengshi119&#34;
+theme = &#34;anatole&#34;
+</code></pre></div><p>注意修改baseURL（你的githubPage)、theme（你下载的主题名称)，其他的根据个人自行修改。</p>
+<h3 id="10生成public目录">10.生成public目录</h3>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">执行hudo命令,生成public目录:
+hugo
+</code></pre></div><p>所有静态页面都会生成到 <code>public</code> 目录。</p>
+<h3 id="11部署到github上">11.部署到github上</h3>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">$ cd public
+$ git init
+$ git remote add origin https://github.com/zhengshi119/zhengshi119.github.io.git
+$ git add -A
+$ git commit -m &#34;first commit&#34;
+$ git push -u origin master
+</code></pre></div><p><img src="/images/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0github/image-20210416204055679.png" alt="image-20210416204055679"></p>
+<p>这里输入的是你github上的<strong>邮箱</strong>，之后一个输入你github的密码。</p>
+<p>注意：在github远程创建仓库后, 利用gitbash进行提交本地文件的时候出现错误时，可以试试：</p>
+<p><img src="/images/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0github/03.png" alt="03"></p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">1: 进行push前先将远程仓库pull到本地仓库
+$ git pull origin master    #git pull --rebase origin master
+$ git push -u origin master
+ 
+2: 强制push本地仓库到远程 (这种情况不会进行merge, 强制push后远程文件可能会丢失 不建议使用此方法)
+$ git push -u origin master -f
+ 
+3: 避开解决冲突, 将本地文件暂时提交到远程新建的分支中
+$ git branch [name]
+# 创建完branch后, 再进行push
+$ git push -u origin [name] 
+</code></pre></div><p>我使用的是第二个的强制push。</p>
+<h3 id="12在github上修改分支">12.在github上修改分支</h3>
+<p>因为站点是部署在master分支上的，需要修改到master分支，才能显示你修改的界面。</p>
+<p>在Setting→Pages：</p>
+<p><img src="/images/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0github/image-20210416201135486.png" alt="image-20210416201135486"></p>
+<p>最后在浏览器上登录：https://zhengshi119.github.io</p>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                
+                
+            </div>
+        </div>
+
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="/js/medium-zoom.min.2d6fd0be87fa98f0c9b4dc2536b312bbca48757f584f6ea1f394abc9bcc38fbc.js"
+        integrity="sha256-LW/Qvof6mPDJtNwlNrMSu8pIdX9YT26h85SrybzDj7w="
+        crossorigin="anonymous"></script></body>
+
+</html>
